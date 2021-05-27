@@ -7,55 +7,55 @@
           <div class="col-xs-12 mb20"><img v-lazy="'/assets/logo2.png'" height="124px" alt="W10" /></div>
           <div class="col-xs-12"><img v-lazy="'/assets/cred.png'" height="44px" alt="BPMA Accedited" /> <img v-lazy="'/assets/british-jewellery-and-giftware-international.png'" height="82px" alt="british jewellery and giftware international" /></div>
           <div class="col-xs-12"><p><a href="tel:0800 012 6406"><b>0800 012 6406</b></a><br/>
-          <a href="mailto:contactus@w10.world" class="text-underline">contactus@w10.world</a></p></div>
+            <a href="mailto:contactus@w10.world" class="text-underline">contactus@w10.world</a></p></div>
 
           <div class="col-xs-12">
             <router-link class="mr10"
-                to="/i/terms-and-conditions"
-                exact
-              >
-                {{ $t('TERMS & CONDITIONS ') }}
-              </router-link>
+                         to="/i/terms-and-conditions"
+                         exact
+            >
+              {{ $t('TERMS & CONDITIONS ') }}
+            </router-link>
 
-              <router-link class="mr10"
+            <router-link class="mr10"
 
-                to="/i/privacy-policy"
-                exact
-              >
-                {{ $t('PRIVACY POLICY') }}
-              </router-link>
+                         to="/i/privacy-policy"
+                         exact
+            >
+              {{ $t('PRIVACY POLICY') }}
+            </router-link>
 
-              <router-link
+            <router-link
 
-                to="/i/returns"
-                exact
-              >
-                Returns
-              </router-link>
-            </div>
-<div class="col-xs-12">
+              to="/i/returns"
+              exact
+            >
+              Returns
+            </router-link>
+          </div>
+          <div class="col-xs-12">
             <p>TIDEWAY YARD UNIT T07, <br/>
-125 MORTLAKE HIGH STREET,  <br/>
-LONDON, SW14 8SN</p></div>
+              125 MORTLAKE HIGH STREET,  <br/>
+              LONDON, SW14 8SN</p></div>
 
           <div class="col-xs-12">  <p>© 2020 Jogroup trading as W10 </p></div>
-<!--          <div class="col-xs-12">  <p><a href="https://www.origin.uk.com" rel="noopener" class="small" target="_blank">WEB DESIGN BY ORIGIN</a></p></div>-->
+          <div class="col-xs-12">  <p><a href="https://www.origin.uk.com" rel="noopener" class="small" target="_blank">WEB DESIGN BY ORIGIN</a></p></div>
           <div class="col-xs-12">
 
 
-          <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/amex.svg" width="50" alt="amex">
+            <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/amex.svg" width="50" alt="amex">
 
-          <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/discover.svg" width="50" alt="discover">
+            <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/discover.svg" width="50" alt="discover">
 
-          <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/diners.svg" width="50" alt="diners">
+            <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/diners.svg" width="50" alt="diners">
 
-          <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/jcb.svg" width="50" alt="jcb">
+            <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/jcb.svg" width="50" alt="jcb">
 
-          <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/mastercard.svg" width="50" alt="mastercard">
+            <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/mastercard.svg" width="50" alt="mastercard">
 
-          <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/visa.svg" width="50" alt="visa">
+            <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/visa.svg" width="50" alt="visa">
 
-        <img class="stripe-icon" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-medium.png" width="50" alt="paypal">
+            <img class="stripe-icon" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-medium.png" width="50" alt="paypal">
 
           </div>
 
