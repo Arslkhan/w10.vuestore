@@ -1,6 +1,5 @@
 <template>
   <footer>
-
     <div class="footerholder">
       <div class="container">
         <div class="row m0 center-xs between-md">
@@ -31,8 +30,7 @@
               LONDON, SW14 8SN</p></div>
 
           <div class="col-xs-12">  <p>© 2020 Jogroup trading as W10 </p></div>
-          <div class="col-xs-12">  <p><a href="https://www.origin.uk.com" class="small" target="_blank">WEB DESIGN BY ORIGIN</a></p></div>
-
+<!--          <div class="col-xs-12">  <p><a href="https://www.origin.uk.com" class="small" target="_blank">WEB DESIGN BY ORIGIN</a></p></div>-->
 
         </div>
       </div>
@@ -53,8 +51,6 @@ import BackToTop from 'theme/components/core/BackToTop'
 
 export default {
   name: 'MainFooter',
-
-
   components: {
     BackToTop
   }

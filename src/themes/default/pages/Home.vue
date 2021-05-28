@@ -27,7 +27,6 @@
           </div>
         </div>
 
-
       </div>
     </section>
 
@@ -46,18 +45,14 @@
           </div>
         </div>
 
-
       </div>
     </section>
-
-
 
     <about-product />
 
     <world-first />
 
     <social-area />
-
 
     <modal name="modal-welcome" :width="882">
       <div class="row welcomepopup">
@@ -67,7 +62,7 @@
         <div class="col-sm-6 flex center-sm middle-sm mobilepadding">
           <div>
             <h3>
-              Welcome to our new site.
+              Welcome to W10 Collection.
               <i slot="close" class="modal-close material-icons" @click="closeWelcome">close</i>
             </h3>
             <hr />
@@ -152,23 +147,17 @@ export default {
       return config.ssr.lazyHydrateFor.some(
         field => ['homepage', 'homepage.bestsellers'].includes(field)
       )
-    },
+    }
   },
   methods:{
-
-
-
-
-    showWelcome() {
-      if(this.$cookie.get('popup') == 'true'){
-
+    showWelcome () {
+      if (this.$cookie.get('popup') == 'true') {
       }else{
         this.$cookie.set('popup', 'true', 100);
         this.$bus.$emit('modal-toggle', 'modal-welcome')
       }
-
     },
-    closeWelcome() {
+    closeWelcome () {
       this.$bus.$emit('modal-hide', 'modal-welcome')
     },
   },
@@ -216,20 +205,19 @@ export default {
       next()
     }
   },
-  metaInfo() {
-
+  metaInfo () {
     return {
       title: '',
       meta: [
-        { property: 'og:title', content: 'W10 Collapsible Cup and Eco-Friendly Drinkware'},
-        { property: 'og:site_name', content: 'W10 Drinkware Collection'},
+        { property: 'og:title', content: 'W10 Collapsible Cup and Eco-Friendly Drinkware' },
+        { property: 'og:site_name', content: 'W10 Drinkware Collection' },
         { property: 'og:description', content: 'W10 - Introducing the worlds 1st double walled Collapsible Cup and a new range of stylish, competitively priced, environmentally friendly drinkware. The range includes both desk cups and travel cups, and some that are suitable for both.'},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:url', content: 'https://w10.world'},
-        {property: 'og:image', content: 'https://w10.world/img/0/0/resize/mageplaza/bannerslider/banner/image/h/o/homepage1_5.jpg' }
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://w10.world' },
+        { property: 'og:image', content: 'https://w10.world/img/0/0/resize/mageplaza/bannerslider/banner/image/h/o/homepage1_5.jpg' }
       ]
     }
-  },
+  }
 }
 </script>
 

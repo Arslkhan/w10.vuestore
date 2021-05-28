@@ -1,7 +1,7 @@
 <template>
   <div class="product align-center w-100 pb20" v-observe-visibility="visibilityChanged">
 
-    
+
     <router-link
       class="block no-underline product-link"
       :to="productLink"
@@ -21,7 +21,7 @@
       </div>
 
       <h3 class="mb0 mt10 productname" v-if="!onlyImage">
-        {{ product.name | htmlDecode }} 
+        {{ product.name | htmlDecode }}
       </h3>
       <p><span v-if="product.short_description">{{ product.short_description | strippedContent }}</span></p>
       <p v-if="product.star_rating == 5436">
@@ -30,35 +30,35 @@
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
-        </p>
+      </p>
       <p v-if="product.star_rating == 5437">
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
-        </p>
-        <p v-if="product.star_rating == 5438">
+      </p>
+      <p v-if="product.star_rating == 5438">
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
-        </p>
-        <p v-if="product.star_rating == 5439">
+      </p>
+      <p v-if="product.star_rating == 5439">
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
-        </p>
-        <p v-if="product.star_rating == 5440">
+      </p>
+      <p v-if="product.star_rating == 5440">
         <span class="material-icons yellow f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
         <span class="material-icons f19">star_rate</span>
-        </p>
+      </p>
       <span
         class="price-original price mr5 lh30"
         v-if="product.special_price && parseFloat(product.original_price_incl_tax) > 0 && !onlyImage"
@@ -72,7 +72,7 @@
       <span
         class="lh30 price"
         v-if="!product.special_price && parseFloat(product.price_incl_tax) > 0 && !onlyImage"
-      >{{ product.price_incl_tax | price(storeView) }}</span>
+      >{{ product.price | price(storeView) }}</span>
     </router-link>
   </div>
 </template>
@@ -121,7 +121,7 @@ export default {
   },
   filters: {
     strippedContent: function(string) {
-           return string.replace(/<\/?[^>]+>/ig, " "); 
+      return string.replace(/<\/?[^>]+>/ig, " ");
     }
   },
   methods: {
@@ -261,15 +261,15 @@ $color-white: color(white);
       content: 'New';
     }
   }
-  
+
 }
 .productname{font-size: 20px; font-weight: 300; color: #000; text-transform: uppercase;}
 p{padding: 0 0 10px ; margin: 0;}
 .price{font-size: 20px; font-weight: 700; color: #000; text-transform: uppercase; margin-bottom: 40px;}
-  @media (max-width: 765px) {
-p{font-size: 13px !important;line-height: 19px !important; }
-.productname {
+@media (max-width: 765px) {
+  p{font-size: 13px !important;line-height: 19px !important; }
+  .productname {
     font-size: 18px;
-}
   }
+}
 </style>

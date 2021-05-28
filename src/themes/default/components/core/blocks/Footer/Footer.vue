@@ -39,9 +39,8 @@
               LONDON, SW14 8SN</p></div>
 
           <div class="col-xs-12">  <p>© 2020 Jogroup trading as W10 </p></div>
-          <div class="col-xs-12">  <p><a href="https://www.origin.uk.com" rel="noopener" class="small" target="_blank">WEB DESIGN BY ORIGIN</a></p></div>
+<!--          <div class="col-xs-12">  <p><a href="https://www.origin.uk.com" rel="noopener" class="small" target="_blank">WEB DESIGN BY ORIGIN</a></p></div>-->
           <div class="col-xs-12">
-
 
             <img class="stripe-icon mr-2" src="https://secure.w10.world/pub/static/version1598452708/frontend/origin/w10/en_GB/StripeIntegration_Payments/img/cards/amex.svg" width="50" alt="amex">
 
@@ -78,8 +77,6 @@ import BackToTop from 'theme/components/core/BackToTop'
 
 export default {
   name: 'MainFooter',
-
-
   components: {
     BackToTop
   }
